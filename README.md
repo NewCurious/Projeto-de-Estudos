@@ -1,5 +1,4 @@
-# Projeto-de-Estudos
-
+# Pacote de efeitos
 ````
-Projeto para treinar Git e Github.
+Diversos efeitos, utilize como quiser!
 ````
