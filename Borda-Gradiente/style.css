@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  background: #000;
+}
+
+.spinnerBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gradient-border {
+  padding: 1.5rem;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: inset 20px 20px 39px #070a10, inset -20px -20px 39px #1b263e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-border::before {
+  content: "";
+  z-index: -1;
+  top: -10px;
+  left: -10px;
+  position: absolute;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: linear-gradient(35deg, #00bfff, #ff1493, #7cfc00);
+  border-radius: 50%;
+  border: none;
+  animation-name: roll;
+  transition: 2s;
+}
+
+.gradient-border:hover::before {
+  animation: roll 1s linear infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 0 0 10px #00ffd9;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 0 0 13px #00ffd953;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0px 10px #00ffd9;
+  }
+}
