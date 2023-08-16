@@ -1,4 +1,4 @@
 # Pacote de efeitos!
 ````
-Diversos efeitos, utilize como quiser!
+Pacote de efeitos para seu projeto!
 ````
