@@ -11,7 +11,7 @@
   transform: translateY(-50%);
 }
 
-.gradient-border {
+.borderGradient {
   padding: 1.5rem;
   border-radius: 50%;
   width: 10rem;
@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-.gradient-border::before {
+.borderGradient::before {
   content: "";
   z-index: -1;
   top: -10px;
@@ -40,7 +40,7 @@
   transition: 2s;
 }
 
-.gradient-border:hover::before {
+.borderGradient:hover::before {
   animation: roll 1s linear infinite;
 }
 
